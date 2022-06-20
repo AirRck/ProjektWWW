@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+</head>
+
+<body>
+
+  <div id="topBar">
+    <div id=menuUser class="hidden">
+      <div id="userName"></div>
+      <div class="small-button" id="menuLogout">WYLOGUJ</div>
+      <img id="userImg">
+    </div>
+    <div class="button hidden" id="menuLogin">ZALOGUJ</div>
+    <div class="button hidden" id="menuRegister">REJESTRACJA</div>
+  </div>
+
+
+  <!-- <button class="accordion">Logowanie</button> -->
+  <div id="panelLogin" class="panel hidden">
+
+    <form>
+      <label for="name"><b>Nazwa użytkownika</b></label>
+      <input id="loginName" type="text" placeholder="Login" name="name" required>
+      <label for="pass"><b>Hasło</b></label>
+      <input id="loginPass" type="password" placeholder="Haslo" name="pass" required>
+      <input id="loginButton" type="button" value="Zaloguj">
+    </form>
+  </div>
+
+
+  <div id="panelRegister" class="panel hidden">
+
+    <form>
+      <label for="userId"><b>Id: </b></label><br>
+      <input id="registerId" type="text" placeholder="id" name="userId" required><br>
+      <label for="name"><b>Nazwa użytkownika: </b></label><br>
+      <input id="registerName" type="text" placeholder="Login" name="name" required><br>
+      <label for="pass"><b>Hasło: </b></label><br>
+      <input id="registerPass" type="password" placeholder="Haslo" name="pass" required><br><br>
+      <input type="button" id="register" value="Załóż konto">
+    </form>
+  </div>
+
+
+  <div id="lobby" class="hidden">
+    <div id="games">
+    </div>
+    <div id="addGame" class="button1">Nowa Gra</div>
+  </div>
+
+
+  <div id="game" class="hidden">    
+    <div id="currentGame">
+      <div id="infoField"></div>      
+        <div>
+          <div id="myShips" class="state">
+          </div>
+          <div id="myShots" class="state">  
+        </div>        
+        </div>
+      </div>
+      <div id="buttons">
+        <div id="addShip" class="button hidden">Dodaj</div>
+        <div id="clearShips" class="button hidden">Wyczyść</div>
+        <div id="resign" class="button">Zrezygnuj</div>
+      </div>
+    </div>
+    
+
+    <!-- <div id="start" class="button">Rozpocznij grę</div> -->
+
+  </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="module" src="js/main.js"></script>
+
+</html>

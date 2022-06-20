@@ -1,0 +1,207 @@
+div {
+    display: inline-block;
+}
+
+div#userName {
+    font-family: sans-serif;
+    font-size: large;
+    margin: 3px;
+}
+
+#games{
+    
+    display: block;
+}
+.game {
+    display: block;
+    margin: 5px;
+    font-family: sans-serif;
+}
+
+
+
+#infoField {
+    text-align: center;
+    display: block;
+    font-family: sans-serif;
+}
+
+.state {
+    /* display: block; */
+}
+
+#game {
+    display: block;
+    text-align: center;
+    
+}
+
+#currentGame {
+    display: block;
+    text-align: center;
+}
+
+#buttons {
+    transform: translateX(-51%);
+}
+
+body {
+    margin: 0px;
+}
+
+#topBar {
+    display: block;
+    /* height: 2rem; */
+    background-color: darkgrey;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.button {
+    background-color: mediumseagreen;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 11px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.small-button:hover {
+    background-color: deeppink;
+}
+.small-button {
+    background-color: mediumseagreen;
+    /* Green */
+    border: none;    
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+.button1 {
+    background-color: royalblue;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 11px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+div.button {
+    cursor: pointer;
+    display: inline-block;
+}
+
+div.button:hover {
+    background-color: deeppink;
+}
+
+#currentGame table {
+    border-collapse: collapse;
+}
+
+#myShips td.ship {
+    background-color: black;
+}
+
+#myShips td.hit {
+    background-color: rgb(255, 212, 104);
+    transition: 1s;
+}
+
+#myShips td.destroyed {
+    background-color: rgb(188, 53, 53);
+    transition: 1s;
+}
+
+
+#currentGame table td {
+    border: solid;
+    width: 2.1em;
+    height: 2.1em;
+    border-width: 0.5px;
+    cursor: pointer;
+}
+
+#myShots.edit table td:hover {
+    background-color: rgb(223, 13, 13);
+}
+
+#myShots td.miss {
+    background-color: rgb(71, 71, 71);
+    transition: 1s;
+}
+
+#myShots td.hit {
+    background-color: rgb(235, 228, 13);
+    transition: 1s;
+}
+
+#myShots td.destroyed {
+    background-color: rgb(235, 13, 13);
+    transition: 1s;
+}
+
+#myShips.edit table td:hover {
+    background-color: aquamarine;
+}
+
+#myShips.edit table td.selected {
+    background-color: rgb(127, 227, 255);
+}
+
+.sit.free {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+div.sit.free:hover {
+    background-color: aqua;
+}
+
+#addGame {
+    cursor: pointer;
+}
+
+#addGame:hover {
+    background-color: aqua;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: #eee;
+    color: rgb(69, 57, 57);
+    cursor: pointer;
+    padding: 16px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    /* padding: 1rem; */
+    background-color: white;
+    /* display: none; */    
+}
